@@ -1,0 +1,26 @@
+[build-system]
+requires = [
+    "setuptools>=65",
+    "wheel",
+    "Cython>=3.0.0",
+    "numpy>=1.26",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clinometer"
+version = "0.1.0"
+description = "Adaptive-window slope estimation in Cython"
+authors = [{ name = "Martijn van den Ende" }]
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+packages = ["clinometer"]
+
+[tool.setuptools.package-data]
+clinometer = ["*.pyx"]
+
+[tool.cythonize]
+language_level = "3"
+annotate = true
