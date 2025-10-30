@@ -3,6 +3,10 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Cython products
+clinometer.c
+clinometer.html
+
 # C extensions
 *.so
 
